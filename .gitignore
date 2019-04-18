@@ -38,6 +38,7 @@ jspm_packages
 
 bin/**
 dist/**
+build/**
 
 .eslintcache
 
