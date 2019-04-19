@@ -5,7 +5,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   entry: './src/js/index.js',
   output: {
-    path: path.resolve('./dist'),
+    path: path.resolve('./build'),
     filename: 'index.js',
     publicPath: '/',
   },
@@ -14,7 +14,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
-    contentBase: path.resolve('./dist'),
+    contentBase: path.resolve('./build'),
     historyApiFallback: true,
     hot: true,
     port: 8585,
